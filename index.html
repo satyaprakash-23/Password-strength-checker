@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+            background-color: #D7E4C0;
+            height: 100vh;
+            color: #12372A;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .progress{
+           width: 1%;
+           height: 15px;
+           transition: width 0.7s ease-in-out 0.2s;
+           background-color: orange;
+        }
+        input[type="text"]{
+            width: 40%;
+        }
+        .pp{
+            width: 40%;
+            background-color: rgb(168, 148, 113);
+            margin-top: 10px;
+        }
+        .inner{
+            background-color: #D7E4C0;
+            margin: 0px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Password Checker</h1>
+        <input type="text" class="text" placeholder="Enter your password here">
+        <div class="inner">
+            <h4>Strength Of Password</h4>
+        </div>
+        <div class="pp">
+            
+            <div class="progress"></div>
+        </div>
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
